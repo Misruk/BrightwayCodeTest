@@ -21,7 +21,7 @@ namespace BrightwayCodeTest.Models
         [Range(0, 365), Required, Display(Name = "Duration of Trip in Days")]
         public int Duration { get; set; }
 
-        [Column(TypeName = "decimal(18, 2)"), Display(Name = "$ USD")]
+        [Column(TypeName = "decimal(18, 2)"), Display(Name = "$USD used per day")]
         public decimal Currency { get; set; }
 
         [Display(Name = "Needed Native Currency"), Column(TypeName = "decimal(18, 2)")]
